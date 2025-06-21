@@ -33,7 +33,7 @@ const UpcomingPgSection = () => {
         <section className="w-full flex flex-col items-center py-16">
             <h2 className="font-anton text-2xl md:text-3xl text-[#181818] mb-12 text-center">Upcoming programs</h2>
             <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
-                {PROGRAMS.map((p, i) => (
+                {PROGRAMS.map((p,) => (
                     <div key={p.title} className="bg-[#F3F3F3] rounded-xl flex flex-col overflow-hidden">
                         <div className="w-full h-48 relative">
                             <Image src={p.img} alt={p.title} fill className="object-cover w-full h-full rounded-t-xl" />

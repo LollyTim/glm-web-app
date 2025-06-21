@@ -1,5 +1,3 @@
-import Image from "next/image";
-import NavBar from "./components/NavBar";
 import HeroSection from "./components/HeroSection";
 import UpcomingPgSection from "./components/UpcomingPgSection";
 import MessagesSection from "./components/MessagesSection";
