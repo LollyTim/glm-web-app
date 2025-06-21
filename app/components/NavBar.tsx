@@ -41,7 +41,7 @@ const NavBar = () => {
                 }`}
         >
             <div className="max-w-6xl w-[80%] mx-auto flex items-center justify-between">
-                <Image src={GlmLogo} alt="glm-logo" />
+                <Image src={GlmLogo} alt="glm-logo"  />
                 {/* Desktop Nav */}
                 <div className="hidden md:flex items-center">
                     <ul className="flex items-center justify-between w-full gap-8">
