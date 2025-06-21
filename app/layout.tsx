@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Anton_SC, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Footer";
+import NavBar from "./components/NavBar";
 
 const anton = Anton_SC({
   variable: "--font-anton",
@@ -32,10 +34,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+            <NavBar />
       <body
         className={`${anton.variable} ${geistMono.variable} ${inter.variable} antialiased`}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );
