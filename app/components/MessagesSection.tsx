@@ -10,7 +10,7 @@ export default function MessagesSection() {
         <h2 className="text-[2.2rem] sm:text-[2.8rem] md:text-[64px] font-extrabold m-0 tracking-wide leading-tight md:leading-none">MESSAGES</h2>
         <span className="text-[15px] sm:text-[16px] mb-6 md:mb-8">From the altar of grace..</span>
         <button className="bg-[#E50914] border-[#FF5A5C] border-[1px] text-white rounded-full px-6 py-2.5 sm:px-8 sm:py-3 font-semibold text-[15px] sm:text-[16px] cursor-pointer shadow-md">
-          OPEN MESSAGE
+          OPEN MESSAGEs
         </button>
       </div>
       {/* Right Side */}
