@@ -10,7 +10,7 @@ import GlmLogo from '../assets/images/glm-logo.svg'
 const NAV_LINKS = [
     { label: 'ABOUT US', href: '/' },
     { label: 'MEETINGS', href: '/' },
-    { label: 'MESSAGES', href: '/' },
+    { label: 'MESSAGES', href: '/messages' },
     { label: 'MINISTRIES', href: '/' },
     { label: 'THE VISION', href: '/' },
 ]
