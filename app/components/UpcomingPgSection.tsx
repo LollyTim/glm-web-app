@@ -15,9 +15,9 @@ const PROGRAMS = [
     {
         img: image.auxano,
         date: 'THIS WEDNESDAY',
-        title: 'JOINT AUXANO',
-        time: '4PM',
-        desc: 'Growth is a living characteristic, AUXANO is an avenue to learn the ways of God, and to grow.',
+        title: 'AIONOIS SERVICE',
+        time: '5PM',
+        desc: 'The Eternal life God is a life that has no beginning or ending. Join us as we explore this life of God..',
     },
     {
         img: image.takeit,
@@ -31,7 +31,7 @@ const PROGRAMS = [
 const UpcomingPgSection = () => {
     return (
         <section className="w-full flex flex-col items-center py-10 md:py-16 px-4 sm:px-6 lg:px-8">
-            <h2 className="font-anton text-3xl md:text-4xl text-[#181818] mb-8 md:mb-12 text-center">Upcoming programs</h2>
+            <h2 className="font-anton text-3xl md:text-4xl text-[#181818] mb-8 md:mb-12 text-center">Fellowship With Us</h2>
             <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                 {PROGRAMS.map((p,) => (
                     <div key={p.title} className="bg-[#F3F3F3] rounded-xl flex flex-col overflow-hidden">
@@ -48,7 +48,7 @@ const UpcomingPgSection = () => {
                     </div>
                 ))}
             </div>
-            <Button className="mt-10 md:mt-12 bg-[#181818] text-white rounded-full px-6 py-4 md:px-8 md:py-5 text-base md:text-lg flex items-center gap-2 shadow-md hover:bg-[#181818]/90">
+            <Button className="mt-10 md:mt-12 bg-[#000000] text-white rounded-full px-6 py-4 md:px-8 md:py-5 text-base md:text-lg flex items-center gap-2 shadow-md hover:bg-[#181818]/90">
                 <MapPin className="w-5 h-5" />
                 GET CHURCH ADDRESS
             </Button>
