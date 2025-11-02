@@ -1,7 +1,6 @@
 import NavBar from '../components/NavBar';
 import MessagesPageHero from '../components/MessagesPageHero';
 import RecentMessagesSection from '../components/RecentMessagesSection';
-import Footer from '../../components/Footer';
 
 export default function MessagesPage() {
   return (
