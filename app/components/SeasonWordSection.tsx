@@ -3,6 +3,7 @@ import devotionalImg from '../assets/images/daily-devotional.svg';
 import testimonyImg from '../assets/images/testimonies.svg';
 import AltarCall from '../assets/images/altar-call.svg';
 import AuxanoImg from '../assets/images/auxano.svg';
+import sharpThreshingImg from '../assets/images/sharp-threshing.png';
 
 export default function SeasonWordSection() {
   return (
@@ -85,9 +86,16 @@ export default function SeasonWordSection() {
       </div>
       {/* Vision Section */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 mt-10 md:mt-16 w-full max-w-5xl">
-        {/* Left Side: Image Placeholder */}
+        {/* Left Side: Image */}
         <div className="flex-1 flex items-center justify-center w-full max-w-xs sm:max-w-md mb-4 md:mb-0">
-          <div className="bg-gray-200 w-full h-48 sm:h-96 rounded-2xl md:rounded-3xl"></div>
+          <div className="relative w-full h-48 sm:h-96 rounded-2xl md:rounded-3xl overflow-hidden">
+            <Image
+              src={sharpThreshingImg}
+              alt="Sharp Threshing Instrument"
+              fill
+              className="object-cover rounded-2xl md:rounded-3xl"
+            />
+          </div>
         </div>
         {/* Right Side: Text and Button */}
         <div className="flex-1 flex flex-col items-start justify-center w-full">

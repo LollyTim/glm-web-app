@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import powerWealthImg from '../assets/images/power-wealth.svg'; 
 
 export default function MessagesSection() {
@@ -9,9 +10,9 @@ export default function MessagesSection() {
         <span className="text-[13px] sm:text-[14px]">Listen to life-transforming</span>
         <h2 className="text-[2.2rem] sm:text-[2.8rem] md:text-[64px] font-extrabold m-0 tracking-wide leading-tight md:leading-none">MESSAGES</h2>
         <span className="text-[15px] sm:text-[16px] mb-6 md:mb-8">From the altar of grace..</span>
-        <button className="bg-[#E50914] border-[#FF5A5C] border-[1px] text-white rounded-full px-6 py-2.5 sm:px-8 sm:py-3 font-semibold text-[15px] sm:text-[16px] cursor-pointer shadow-md">
+        <Link href="/messages" className="bg-[#E50914] border-[#FF5A5C] border-[1px] text-white rounded-full px-6 py-2.5 sm:px-8 sm:py-3 font-semibold text-[15px] sm:text-[16px] cursor-pointer shadow-md inline-block hover:bg-[#d00813] transition">
           OPEN MESSAGEs
-        </button>
+        </Link>
       </div>
       {/* Right Side */}
       <div className="flex-1 flex items-center justify-center w-full md:w-auto h-full">
@@ -20,7 +21,7 @@ export default function MessagesSection() {
             src={powerWealthImg} 
             alt="messages" 
             width={260} 
-            height={260} 
+            height={260}   
             className="rounded-[20px] md:rounded-[28px] object-cover w-full h-auto max-w-[260px] md:max-w-[360px]"
           />
         </div>
