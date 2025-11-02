@@ -122,7 +122,7 @@ const NavBar = () => {
                                 {/* Call to Action Section */}
                                 <div className="mb-8 flex-shrink-0">
                                     <p className="text-white text-sm font-inter mb-4 leading-relaxed">
-                                        Do you want to follow the vision, join God's movement and be a part of us?
+                                        Do you want to follow the vision, join God&apos;s movement and be a part of us?
                                     </p>
                                     <Link href="#" className="block">
                                         <Button className="bg-[#D00002] hover:bg-[#D00002]/90 text-white w-full rounded-lg py-3 text-sm font-semibold">
