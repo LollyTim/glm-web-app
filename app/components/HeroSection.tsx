@@ -9,7 +9,7 @@ const HeroSection = () => {
             className='w-full h-[90vh] min-h-[400px] max-h-[90vh] lg:max-h-[700px] xl:max-h-[600px] bg-[#181818] bg-cover bg-center flex justify-center items-center px-4 sm:px-0'
             style={{ backgroundImage: `url(${image.heroBg.src})` }}
         >
-            <div className='w-full max-w-xl px-4 sm:px-5 h-full flex flex-col justify-center items-center mx-auto gap-4 md:gap-2'>
+            <div className='w-full px-4 sm:px-5 h-full flex flex-col justify-center items-center mx-auto gap-4 md:gap-2'>
                 {/* Mobile View - Three lines, uppercase */}
                 <h1 className='font-anton text-center font-normal text-white text-[64px] leading-[112%] tracking-normal uppercase md:text-[88px] md:capitalize md:w-[707px] md:h-[198px] w-[337px] h-[216px] mx-auto'>
                     <span className="md:hidden block">
