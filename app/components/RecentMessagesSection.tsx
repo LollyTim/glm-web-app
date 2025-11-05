@@ -115,14 +115,14 @@ export default function RecentMessagesSection() {
   ];
 
   return (
-    <section className="w-full bg-white py-6 sm:py-8 lg:py-12 px-4 sm:px-6 lg:px-8">
+    <section className="w-full bg-white py-4 sm:py-6 md:py-8 lg:py-12 px-3 sm:px-4 md:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
-        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-6 sm:mb-8 lg:mb-8 gap-4 lg:gap-4">
-          <h2 className="font-anton font-normal text-2xl sm:text-3xl lg:text-[40px] text-black leading-[112%] tracking-normal capitalize">Recent Messages</h2>
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-4 sm:mb-6 md:mb-8 lg:mb-8 gap-3 sm:gap-4 lg:gap-4">
+          <h2 className="font-anton font-normal text-xl sm:text-2xl md:text-3xl lg:text-[40px] text-black leading-[112%] tracking-normal capitalize">Recent Messages</h2>
           
           {/* Search Bar */}
-          <div className="relative w-full sm:w-[400px] lg:w-[590px] h-[56px] sm:h-[64px] lg:h-[72px]">
+          <div className="relative w-full sm:w-full md:w-[400px] lg:w-[590px] h-[48px] sm:h-[56px] md:h-[64px] lg:h-[72px]">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4 sm:w-5 sm:h-5 lg:w-5 lg:h-5" />
             <input
               type="text"
