@@ -47,29 +47,33 @@ export default function SeasonWordSection() {
       </div>
       {/* New Section: Call to Decision */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8 mt-6 sm:mt-10 md:mt-16 w-full max-w-5xl px-2 sm:px-0">
-        {/* Left Side */}
-        <div className="flex-1 flex flex-col items-center sm:items-start justify-center w-full">
-          <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-black mb-2 sm:mb-3 md:mb-4 font-satoshi leading-tight text-center sm:text-left">HAVE YOU GIVEN YOUR<br/>LIFE TO JESUS?</h3>
-          <p className="text-xs sm:text-sm md:text-base text-black mb-3 sm:mb-4 md:mb-6 max-w-md text-center sm:text-left px-2 sm:px-0">Do you know the trumpet can sound anytime from now? God loves you so much and his arms are wide open to you..</p>
-          <button className="bg-[#E50914] text-white rounded-full px-5 py-2 sm:px-6 sm:py-2.5 md:px-8 md:py-3 font-semibold text-xs sm:text-sm md:text-[16px] shadow-md hover:bg-[#b20710] transition">MAKE A DECISION FOR GOD</button>
-        </div>
-        {/* Right Side */}
-        <div className="flex-1 flex items-center justify-center w-full">
-          <div className="overflow-hidden rounded-[20px] sm:rounded-[24px] md:rounded-[32px] w-full max-w-[240px] sm:max-w-xs md:max-w-md">
+        {/* Image - appears first on mobile, second on desktop */}
+        <div className="flex-1 flex items-center justify-center w-full order-1 md:order-2">
+          <div className="overflow-hidden rounded-[20px] sm:rounded-[24px] md:rounded-[32px] w-full sm:max-w-xs md:max-w-md">
             <Image
               src={AltarCall}
               alt="Altar Call"
-              width={320}
-              height={220}
+              width={351}
+              height={280}
               className="object-cover w-full h-auto grayscale"
             />
           </div>
+        </div>
+        {/* Text - appears second on mobile, first on desktop */}
+        <div className="flex-1 flex flex-col   w-full order-2 md:order-1">
+          <h3 className="font-anton font-normal text-[32px] leading-[112%]  text-[#1E1E1E] w-[294px] h-[72px]  mb-2 sm:mb-3 md:mb-4 sm:text-2xl md:text-3xl lg:text-4xl sm:font-extrabold sm:text-black sm:bg-transparent sm:w-auto sm:h-auto sm:font-satoshi sm:leading-tight text-left">HAVE YOU GIVEN YOUR<br/>LIFE TO JESUS?</h3>
+          <p className="font-satoshi font-normal text-base leading-[130%] text-black mb-3 sm:mb-4 md:mb-6 max-w-md  px-2 sm:px-0 sm:text-xs md:text-sm">
+            Do you know the trumpet can sound anytime from now? God loves you so much and his arms are wide open to you..
+          </p>
+          <button className="w-[231px] h-[45px] bg-[#D00002] border-2 border-[#FF5A5C] rounded-full py-[14px] px-5 text-white font-semibold text-xs sm:text-sm md:text-[16px] shadow-md hover:bg-[#b20710] transition sm:w-auto sm:h-auto sm:bg-[#E50914] sm:border-0 sm:px-6 sm:py-2.5 md:px-8 md:py-3">
+            MAKE A DECISION FOR GOD
+          </button>
         </div>
       </div>
       {/* AUXANO Section */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8 mt-6 sm:mt-10 md:mt-16 w-full max-w-5xl bg-[#F3F3F3] rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 mx-2 sm:mx-0">
         {/* Left Side: Image */}
-        <div className="flex-1 max-w-[240px] sm:max-w-xs md:max-w-md w-full mb-4 md:mb-0">
+        <div className="flex-1 w-full sm:max-w-xs md:max-w-md mb-4 md:mb-0">
           <Image
             src={AuxanoImg}
             alt="Auxano"
@@ -79,16 +83,20 @@ export default function SeasonWordSection() {
           />
         </div>
         {/* Right Side: Text and Button */}
-        <div className="flex-1 flex flex-col items-center sm:items-start justify-center max-w-lg w-full">
-          <p className="text-base sm:text-lg md:text-2xl font-semibold text-[#2B1818] mb-3 sm:mb-4 md:mb-6 leading-snug font-satoshi text-center sm:text-left px-2 sm:px-0">Do you desire spiritual growth?<br/>Intimacy with God? Spiritual fervency? AUXANO is the avenue God has designed for your growth..</p>
-          <button className="bg-[#E50914] text-white rounded-full px-5 py-2 sm:px-6 sm:py-2.5 md:px-8 md:py-3 font-semibold text-xs sm:text-sm md:text-[16px] shadow-md hover:bg-[#b20710] transition">REGISTER FOR AUXANO</button>
+        <div className="flex-1 flex flex-col md:items-center max-w-lg w-full">
+          <p className=" text-[20px] font-big-shoulders   font-bold text-[#170000] mb-3 sm:mb-4 md:mb-6 sm:text-lg md:text-2xl  md:font-satoshi  px-2 sm:px-0">
+            Do you desire spiritual growth?<br/>Intimacy with God? Spiritual fervency? AUXANO is the avenue God has designed for your growth..
+          </p>
+          <button className="w-[204px] h-[45px] bg-[#D00002] border-2 border-[#FF5A5C] rounded-full py-[14px] text-white font-semibold text-xs sm:text-sm md:text-[16px] shadow-md hover:bg-[#b20710] transition sm:w-auto sm:h-auto sm:bg-[#E50914] sm:border-0 sm:px-6 sm:py-2.5 md:py-3">
+            REGISTER FOR AUXANO
+            </button>
         </div>
       </div>
       {/* Vision Section */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8 mt-6 sm:mt-10 md:mt-16 w-full max-w-5xl px-2 sm:px-0">
         {/* Left Side: Image */}
-        <div className="flex-1 flex items-center justify-center w-full max-w-[240px] sm:max-w-xs md:max-w-md mb-4 md:mb-0">
-          <div className="relative w-full h-40 sm:h-48 md:h-96 rounded-xl sm:rounded-2xl md:rounded-3xl overflow-hidden">
+        <div className="flex-1 flex items-center justify-center w-full sm:max-w-xs md:max-w-md mb-4 md:mb-0">
+          <div className="relative w-full aspect-square sm:aspect-auto sm:h-48 md:h-96 rounded-xl sm:rounded-2xl md:rounded-3xl overflow-hidden">
             <Image
               src={sharpThreshingImg}
               alt="Sharp Threshing Instrument"
@@ -99,7 +107,7 @@ export default function SeasonWordSection() {
         </div>
         {/* Right Side: Text and Button */}
         <div className="flex-1 flex flex-col items-center sm:items-start justify-center w-full">
-          <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold text-black mb-2 sm:mb-3 md:mb-4 font-satoshi uppercase leading-tight text-center sm:text-left px-2 sm:px-0">
+          <h3 className="font-anton font-normal text-[32px] leading-[140%] tracking-normal text-[#1E1E1E] mb-2 sm:mb-3 md:mb-4 md:text-[48px] md:leading-[112%] md:w-[487px] md:h-[270px]  sm:text-left px-2 sm:px-0">
             Behold, I will make thee<br/>a new sharp threshing<br/>instrument having teeth:<br/>thou shalt thresh the<br/>mountains, and..
           </h3>
           <p className="text-xs sm:text-sm md:text-base text-black mb-3 sm:mb-4 md:mb-6 text-center sm:text-left px-2 sm:px-0">God has given us a vision..</p>
