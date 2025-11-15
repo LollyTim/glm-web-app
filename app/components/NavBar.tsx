@@ -47,8 +47,8 @@ const NavBar = () => {
             className={`w-full h-[72px] py-[12px] flex items-center fixed top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-[#181818]'
                 }`}
         >
-            <div className="max-w-6xl w-[80%] mx-auto flex items-center justify-between">
-                <Image src={GlmLogo} alt="glm-logo"  />
+            <div className="max-w-6xl w-[90%] sm:w-[80%] mx-auto flex items-center justify-between">
+                <Image src={GlmLogo} alt="glm-logo" width={100} height={40} className="h-auto w-auto max-w-[100px] sm:max-w-none" />
                 {/* Desktop Nav */}
                 <div className="hidden md:flex items-center">
                     <ul className="flex items-center justify-between w-full gap-8">
@@ -87,7 +87,7 @@ const NavBar = () => {
                         </DialogTrigger>
                         <DialogContent 
                             showCloseButton={false}
-                            className="bg-[#181818] border-none p-0 !top-0 !left-0 !translate-x-0 !translate-y-0 !w-[320px] !max-w-[85vw] !h-screen !max-h-screen !rounded-none !shadow-xl data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:slide-out-to-left data-[state=open]:slide-in-from-left"
+                            className="bg-[#181818] border-none p-0 !top-0 !left-0 !translate-x-0 !translate-y-0 !w-full !max-w-[320px] !h-screen !max-h-screen !rounded-none !shadow-xl data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:slide-out-to-left data-[state=open]:slide-in-from-left"
                         >
                             <div className="flex flex-col h-full overflow-y-auto px-6 py-6">
                                 {/* Header with Logo and Close Button */}
